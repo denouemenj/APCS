@@ -53,6 +53,6 @@ public class JiayuLi_GreatestCommonFactor_2022 {
             max %= min;
         }
 
-        return min;
+        return min; //return the gcf
     }
 }

@@ -1,23 +1,37 @@
-//
-//public class test {
-//    public static void main(String[] args) {
-//        longestStreak("CCAAAAATTT!");
-//    }
-//
-//    public static void longestStreak(String str) {
-//        int max = 1;
-//        int index;
-//        String repeat = "";
-//        for (int i = 1; i < s.length(); i++) {
-//            int count = 1;
-//            while (i < str.length() && str.charAt(i - 1) == str.charAt(i)) {
-//                count++;
-//                i++;
-//                max = Math.max(count, max);
-//            }
-//        }
-//    }
-//}
-//
-//
-//
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.stream.StreamSupport;
+
+public class test {
+    private int[] itemsSold = {48, 50, 37, 62, 38, 70, 55, 37, 64, 60};
+    private double[] wages; // wages to be computed in part (b)
+
+    public static void main(String[] args) {
+System.out.println(doSomething("jiayu"));
+    }
+
+    public static String doSomething(String str)
+
+    {
+
+        if (str.length() < 1)
+
+        {
+
+            return "";
+
+        }
+
+        else
+
+        {
+
+            return str.substring(0, 1) + doSomething(str.substring(1));
+
+        }
+
+    }}
+
+
+
+

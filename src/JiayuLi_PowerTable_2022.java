@@ -15,7 +15,7 @@ public class JiayuLi_PowerTable_2022 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in); //init scanner
         List<Integer> bases = null;
-        List<Integer> exponents =null;
+        List<Integer> exponents = null;
 
         try {
             System.out.println("What bases do you want yor power table to have? Please separate each number by a space and enter them in numerical form (whole numbers only): "); //directions
@@ -39,7 +39,7 @@ public class JiayuLi_PowerTable_2022 {
         //init table
         for (int i = 1; i <= bases.size(); i++) {
             for (int j = 1; j <= exponents.size(); j++) {
-                powerTable[i][j] = String.valueOf( Math.pow(bases.get(i - 1), exponents.get(j - 1))); //calculate and record values
+                powerTable[i][j] = String.valueOf((int) Math.pow(bases.get(i - 1), exponents.get(j - 1))); //calculate and record values
             }
         }
 

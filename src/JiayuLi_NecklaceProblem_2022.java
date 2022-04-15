@@ -12,8 +12,8 @@ public class JiayuLi_NecklaceProblem_2022 {
         Scanner in = new Scanner(System.in);
 
         //the original numbers entered
-        int num1;
-        int num2;
+        int num1 = 0;
+        int num2 = 0;
 
         //the updating number used in while loop
         int recurNum1;
@@ -24,14 +24,18 @@ public class JiayuLi_NecklaceProblem_2022 {
         int cnt = 1;
 
         System.out.println("An interesting problem in number theory is sometimes called the “necklace problem.” This problem begins with two single-digit numbers. The next number is obtained by adding the first two numbers together and saving only the ones digit. This process is repeated until the “necklace” closes by returning to the original two numbers."); //introduction to the program
+        try {
+            //record first number
+            System.out.println("Please enter the first number: ");
+            num1 = Integer.parseInt(in.nextLine());
 
-        //record first number
-        System.out.println("Please enter the first number: ");
-        num1 = Integer.parseInt(in.nextLine());
-
-        //record second number
-        System.out.println("Please enter the second number: ");
-        num2 = Integer.parseInt(in.nextLine());
+            //record second number
+            System.out.println("Please enter the second number: ");
+            num2 = Integer.parseInt(in.nextLine());
+        } catch (Exception e) {
+            System.out.println("You have not entered an integer, please try again."); //error message
+            System.exit(1);
+        }
 
         System.out.println("The two numbers you entered are " + num1 + " and " + num2 + "."); //reconfirm numbers
 
